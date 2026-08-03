@@ -1,0 +1,50 @@
+services:
+  app:
+    build: ./docker/php
+    container_name: mybuild_app
+    ports:
+      - 8080:8080
+    depends_on:
+      - postgres
+    volumes:
+      - ./docker/php/php.ini:/usr/local/etc/php/php.ini
+      - ./mybuild:/var/www/html
+    networks:
+      - mybuild_network
+
+  postgres:
+    image: postgres:16
+    container_name: mybuild_db
+    ports:
+      - 5432:5432
+    volumes:
+      - mybuild_db_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=mybuild
+      - POSTGRES_PASSWORD=mybuild
+      - POSTGRES_DB=mybuild
+    networks:
+      - mybuild_network
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: mybuild_pgadmin
+    ports:
+      - 5050:80
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@example.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    volumes:
+      - mybuild_pgadmin_data:/var/lib/pgadmin
+    depends_on:
+      - postgres
+    networks:
+      - mybuild_network
+
+volumes:
+  mybuild_db_data:
+  mybuild_pgadmin_data:
+
+networks:
+  mybuild_network:
+    driver: bridge

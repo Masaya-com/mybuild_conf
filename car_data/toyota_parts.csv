@@ -1,0 +1,80 @@
+part_id,compatible_models,part_category,part_name,part_maker,grade,price_yen,power_delta_ps,torque_delta_nm,acceleration_delta_sec,top_speed_delta_kmh,fuel_efficiency_delta_km_per_l,weight_delta_kg,handling_score_delta,braking_distance_delta_m,description
+1,GR Supra,ecu_tune,B58 ECUチューン Stage1,HKS,sport,80000,25,35,-0.3,5,-0.5,0,0.0,0,低回転トルク向上・燃調最適化
+2,GR Supra,ecu_tune,B58 ECUチューン Stage2,Ecumaster,racing,150000,55,70,-0.5,10,-1.2,0,0.1,0,ブーストアップ込みのハイパワーチューン
+3,GR Supra,exhaust,Hi-Power マフラー,HKS,sport,120000,8,5,-0.1,3,0.3,-4,0.0,0,ステンレス製スポーツマフラー
+4,GR Supra,exhaust,R1チタンマフラー,Amuse,racing,250000,15,10,-0.2,5,0.5,-7,0.0,0,フルチタン超軽量マフラー
+5,GR Supra,suspension,Street Advance Z コイルオーバー,TEIN,sport,95000,0,0,0.0,0,0.0,2,1.2,-3,車高・減衰16段調整対応
+6,GR Supra,suspension,DFV Road & Track コイルオーバー,Öhlins,racing,280000,0,0,0.0,0,0.0,4,1.9,-5,DFV採用プレミアムダンパー
+7,GR Supra,brake,TYPE HC+ ブレーキパッド,Project Mu,sport,18000,0,0,0.0,0,0.0,0,0.3,-3,ストリート/サーキット兼用高熱対応
+8,GR Supra,brake,GT ビッグブレーキキット 380mm 6ポット,Brembo,racing,350000,0,0,0.0,0,0.0,6,0.4,-7,前後ビッグキャリパー換装
+9,GR Supra,tire,Pilot Sport 4S 255/35R19,Michelin,sport,80000,0,0,-0.1,0,-0.3,0,0.6,-2,UHPハイパフォーマンスタイヤ
+10,GR Supra,tire,ADVAN A052 255/35R19,Yokohama,racing,120000,0,0,-0.25,0,-1.0,0,1.3,-5,セミスリックタイヤ
+11,GR Supra,air_filter,Racing Suction エアクリーナー,HKS,sport,25000,3,3,0.0,1,-0.1,-1,0.0,0,剥き出しタイプ吸気効率向上
+12,GR Supra,intercooler,大容量インタークーラーキット,Wagner Motorsport,racing,180000,18,25,-0.15,4,-0.2,2,0.0,0,大容量コア採用で冷却性能大幅向上
+13,GR86,ecu_tune,FA24 ECUチューン,HKS,sport,60000,10,8,-0.15,4,-0.3,0,0.0,0,点火・燃調最適化NAチューン
+14,GR86,ecu_tune,FA24 ECU Stage2,TOMS,racing,110000,18,12,-0.25,6,-0.5,0,0.0,0,高回転域重視の強化チューン
+15,GR86,exhaust,Expreme Ti マフラー,Tomei,racing,180000,12,8,-0.15,4,0.5,-6,0.0,0,フルチタン製超軽量マフラー
+16,GR86,exhaust,Authorize R マフラー,FUJITSUBO,sport,95000,7,5,-0.1,3,0.3,-3,0.0,0,耐久性重視スポーツマフラー
+17,GR86,suspension,Flex Z コイルオーバー,TEIN,sport,75000,0,0,0.0,0,0.0,0,1.0,-2,フルタップ16段調整式
+18,GR86,suspension,Road & Track コイルオーバー,Öhlins,racing,260000,0,0,0.0,0,0.0,3,1.6,-4,競技対応プレミアムダンパー
+19,GR86,brake,MX72 ブレーキパッド,Endless,sport,15000,0,0,0.0,0,0.0,0,0.2,-3,初期制動力向上ストリート向け
+20,GR86,brake,Sport ブレーキキット 330mm 4ポット,Brembo,racing,280000,0,0,0.0,0,0.0,5,0.4,-6,4ポットキャリパー換装
+21,GR86,tire,Potenza RE-71RS 215/40R18,Bridgestone,sport,70000,0,0,-0.2,0,-0.8,0,1.0,-4,ハイグリップタイヤ
+22,GR86,tire,ADVAN A052 215/40R18,Yokohama,racing,100000,0,0,-0.35,0,-1.3,0,1.5,-6,セミスリックタイヤ
+23,GR86,engine,ハイコンプピストンキット,TODA RACING,racing,350000,15,10,-0.2,5,-0.5,5,0.0,0,高圧縮比化でNA性能最大化
+24,GR86,transmission,クロスミッション,TODA RACING,racing,450000,0,0,-0.4,0,-1.5,8,0.2,0,ワイドレシオからクロスレシオへ換装
+25,GR Yaris,ecu_tune,G16E-GTS ECUチューン Stage1,GRMN,sport,70000,22,30,-0.3,5,-0.5,0,0.0,0,ブースト圧最適化・純正品質チューン
+26,GR Yaris,ecu_tune,G16E-GTS ECUチューン Stage2,HKS,racing,140000,45,55,-0.5,10,-1.0,0,0.1,0,ブーストアップ含む高出力チューン
+27,GR Yaris,exhaust,Hi-Power マフラー,HKS,sport,100000,8,6,-0.1,3,0.2,-2,0.0,0,スポーツマフラー軽量化
+28,GR Yaris,exhaust,フルチタンマフラー,RACING LINE,racing,220000,14,10,-0.2,5,0.4,-5,0.0,0,フルチタン軽量モデル
+29,GR Yaris,suspension,セパレートスプリング,Cusco,sport,45000,0,0,0.0,0,0.0,-2,0.8,-2,軽量スポーツスプリング
+30,GR Yaris,suspension,Mono Sport コイルオーバー,TEIN,racing,130000,0,0,0.0,0,0.0,0,1.4,-3,単筒式高性能ダンパー
+31,GR Yaris,suspension,CoupéKit コイルオーバー,Öhlins,racing,280000,0,0,0.0,0,0.0,2,1.9,-4,プレミアムダンパー最高峰
+32,GR Yaris,brake,B Spec ブレーキパッド,Project Mu,sport,14000,0,0,0.0,0,0.0,0,0.2,-2,日常使い対応高性能パッド
+33,GR Yaris,brake,System Inch Up Kit,Endless,racing,200000,0,0,0.0,0,0.0,3,0.4,-5,ローター大径化キット
+34,GR Yaris,tire,Pilot Sport 4S 225/40R18,Michelin,sport,72000,0,0,-0.15,0,-0.4,0,0.5,-2,UHPスポーツタイヤ
+35,GR Yaris,tire,ADVAN A052 225/40R18,Yokohama,racing,105000,0,0,-0.3,0,-1.0,0,1.3,-5,セミスリックタイヤ
+36,GR Yaris,air_filter,Racing Suction エアクリーナー,HKS,sport,20000,4,3,0.0,1,-0.1,-1,0.0,0,吸気抵抗低減で中低速向上
+37,GR Yaris,intercooler,Type27FD インタークーラー,GReddy,racing,160000,15,20,-0.1,3,-0.2,1,0.0,0,大容量フロントマウント型
+38,GR Corolla,ecu_tune,G16E-GTS ECUチューン Stage1,GRMN,sport,75000,25,30,-0.3,5,-0.5,0,0.0,0,304psから329ps相当へ向上
+39,GR Corolla,ecu_tune,G16E-GTS ECUチューン Stage2,HKS,racing,145000,50,60,-0.5,10,-1.0,0,0.1,0,ブーストアップ含む高出力チューン
+40,GR Corolla,exhaust,Hi-Power マフラー,HKS,sport,105000,8,6,-0.1,3,0.2,-2,0.0,0,スポーツマフラー
+41,GR Corolla,exhaust,チタンマフラー,Amuse,racing,230000,15,10,-0.2,5,0.4,-5,0.0,0,フルチタン製
+42,GR Corolla,suspension,Street Basis Z スプリング,TEIN,sport,40000,0,0,0.0,0,0.0,-2,0.8,-1,ローダウンスプリング
+43,GR Corolla,suspension,Road & Track コイルオーバー,Öhlins,racing,270000,0,0,0.0,0,0.0,3,1.7,-4,競技対応ダンパー
+44,GR Corolla,brake,TYPE HC ブレーキパッド,Project Mu,sport,15000,0,0,0.0,0,0.0,0,0.2,-2,ストリート向け高性能パッド
+45,GR Corolla,brake,GT ブレーキキット 355mm 6ポット,Brembo,racing,320000,0,0,0.0,0,0.0,5,0.4,-6,前輪6ポットキャリパー
+46,GR Corolla,tire,Potenza Sport 235/40R18,Bridgestone,sport,75000,0,0,-0.15,0,-0.5,0,0.6,-3,ハイパフォーマンスタイヤ
+47,GR Corolla,tire,ADVAN A052 235/40R18,Yokohama,racing,110000,0,0,-0.3,0,-1.2,0,1.4,-5,セミスリックタイヤ
+48,Supra,ecu_tune,2JZ-GTE ECUチューン Stage1,HKS,sport,65000,20,30,-0.2,5,-0.5,0,0.0,0,点火・燃調最適化
+49,Supra,ecu_tune,2JZ-GTE ECUチューン Stage2,HKS,racing,130000,50,70,-0.4,10,-1.2,0,0.1,0,ブーストアップ対応強化チューン
+50,Supra,exhaust,Hi-Power マフラー 2JZ,HKS,sport,110000,10,8,-0.1,4,0.3,-4,0.0,0,スポーツマフラー
+51,Supra,exhaust,SUPER TURBO マフラー 2JZ,HKS,racing,200000,18,15,-0.2,6,0.5,-6,0.0,0,競技用高性能マフラー
+52,Supra,suspension,Super Street コイルオーバー,TEIN,sport,80000,0,0,0.0,0,0.0,2,1.1,-3,車高調整式
+53,Supra,suspension,B16 コイルオーバー,Bilstein,racing,210000,0,0,0.0,0,0.0,3,1.7,-4,競技対応ダンパー
+54,Supra,brake,MX72 ブレーキパッド,Endless,sport,16000,0,0,0.0,0,0.0,0,0.3,-3,高温対応ストリートパッド
+55,Supra,brake,GT ビッグブレーキキット,Brembo,racing,330000,0,0,0.0,0,0.0,7,0.4,-7,前後ビッグキャリパー換装
+56,Supra,tire,ADVAN Neova AD09 235/45R17,Yokohama,sport,65000,0,0,-0.2,0,-0.7,0,0.8,-3,ハイグリップスポーツタイヤ
+57,Supra,tire,Potenza RE-71RS 235/45R17,Bridgestone,racing,90000,0,0,-0.3,0,-1.1,0,1.2,-5,セミスリックタイヤ
+58,Supra,turbo,SUPER SEQUENTIAL ターボキット,HKS,racing,600000,80,120,-0.5,15,-1.5,8,0.0,0,シーケンシャルツインターボ換装
+59,Supra,air_filter,Racing Suction エアクリーナー,HKS,sport,22000,4,3,0.0,1,-0.1,-1,0.0,0,剥き出しタイプ吸気抵抗低減
+60,Celica,ecu_tune,3S-GTE ECUチューン Stage1,HKS,sport,55000,20,25,-0.2,5,-0.5,0,0.0,0,燃調・点火最適化
+61,Celica,exhaust,Nur Spec マフラー 3S-GTE,Blitz,sport,90000,8,6,-0.1,3,0.3,-3,0.0,0,スポーツマフラー
+62,Celica,suspension,SS コイルオーバー,TEIN,sport,65000,0,0,0.0,0,0.0,1,0.9,-2,車高調整式
+63,Celica,brake,MX72 ブレーキパッド,Endless,sport,14000,0,0,0.0,0,0.0,0,0.2,-2,ストリート向け高性能パッド
+64,Celica,tire,Potenza RE-71RS 205/50R15,Bridgestone,racing,60000,0,0,-0.25,0,-1.0,0,1.0,-4,セミスリックタイヤ
+65,Celica,ecu_tune,2ZZ-GE ECUチューン,HKS,sport,50000,8,5,-0.1,3,-0.2,0,0.0,0,高回転域重視NAチューン
+66,Celica,exhaust,Authorize R マフラー 2ZZ-GE,FUJITSUBO,sport,85000,6,4,-0.1,3,0.3,-2,0.0,0,スポーツマフラー
+67,Celica,suspension,SS コイルオーバー FF用,TEIN,sport,60000,0,0,0.0,0,0.0,0,0.8,-2,FF専用セッティング
+68,Celica,brake,B Spec ブレーキパッド,Project Mu,sport,13000,0,0,0.0,0,0.0,0,0.2,-2,ストリート向け高性能パッド
+69,Celica,tire,ADVAN Neova AD09 195/50R16,Yokohama,sport,55000,0,0,-0.2,0,-0.8,0,0.9,-3,ハイグリップスポーツタイヤ
+70,MR2,ecu_tune,3S-GTE ECUチューン Stage1,HKS,sport,55000,18,22,-0.2,5,-0.5,0,0.0,0,燃調最適化MRレイアウト対応
+71,MR2,exhaust,Hi-Power マフラー MR2用,HKS,sport,95000,9,7,-0.1,3,0.3,-3,0.0,0,MRレイアウト専用設計
+72,MR2,suspension,Super Street コイルオーバー MR2,TEIN,sport,70000,0,0,0.0,0,0.0,1,1.0,-2,MR専用前後セッティング
+73,MR2,suspension,Road & Track コイルオーバー MR2,Öhlins,racing,240000,0,0,0.0,0,0.0,3,1.8,-4,競技対応プレミアムダンパー
+74,MR2,brake,MX72 ブレーキパッド,Endless,sport,14000,0,0,0.0,0,0.0,0,0.2,-3,高温対応ストリート向け
+75,MR2,brake,GT ブレーキキット,Brembo,racing,280000,0,0,0.0,0,0.0,5,0.4,-6,ビッグキャリパー換装
+76,MR2,tire,Potenza RE-71RS 225/50R15,Bridgestone,racing,65000,0,0,-0.3,0,-1.2,0,1.2,-5,セミスリックタイヤ
+77,MR2,turbo,GT III ターボキット 3S-GTE,HKS,racing,500000,70,100,-0.5,15,-1.5,7,0.0,0,シングルタービン大型換装
+78,MR2,ecu_tune,3S-GE ECUチューン,HKS,sport,48000,8,5,-0.1,3,-0.2,0,0.0,0,点火・燃調最適化NAチューン
+79,MR2,exhaust,Authorize R マフラー 3S-GE,FUJITSUBO,sport,88000,7,5,-0.1,3,0.3,-3,0.0,0,スポーツマフラー

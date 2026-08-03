@@ -1,0 +1,19 @@
+# 環境変数ファイル（機密情報を含むため除外）
+.env
+
+# Laravel 本体（composer install で生成されるため除外）
+src/vendor/
+src/.env
+src/node_modules/
+
+# ログ・キャッシュ
+src/storage/logs/*.log
+src/storage/framework/cache/
+src/storage/framework/sessions/
+src/storage/framework/views/
+
+# IDE・OS
+.idea/
+.vscode/
+*.DS_Store
+Thumbs.db
