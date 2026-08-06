@@ -70,7 +70,7 @@
 | F-09 | お気に入り | 車両を登録・解除し、登録済み車両を一覧表示する | 必要 | 実装予定 |
 | F-10 | データ投入 | CSVから車両・パーツ・適合関係を登録する | CLI | 実装済み |
 
-現時点でWebルートに存在するのは、Laravel標準のウェルカム画面を表示する `GET /` のみである。
+現時点の業務画面ルートは、Laravel標準のウェルカム画面を表示する `GET /` のみである。このほか、フレームワークのヘルスチェック `GET /up` が実装済みである。
 
 ### 3.2 ホーム（F-01）
 
@@ -239,6 +239,7 @@
 | POST | `/logout` | ログアウト | 必要 | 実装予定 |
 | GET | `/favorites` | お気に入り一覧 | 必要 | 実装予定 |
 | POST | `/favorites/{car}` | お気に入り登録・解除 | 必要 | 実装予定 |
+| GET | `/up` | ヘルスチェック | 不要 | 実装済み |
 
 専用の外部公開APIは現時点では設けない。
 
@@ -324,7 +325,7 @@ erDiagram
 | `braking_distance_delta_m` | integer | 制動距離差分（m） |
 | `description` | text/null | 説明 |
 
-初期CSVで使用するカテゴリーは `ecu_tune`、`exhaust`、`suspension`、`brake`、`tire`、`air_filter`、`intercooler` である。
+初期CSVで使用するカテゴリーは `ecu_tune`、`exhaust`、`suspension`、`brake`、`tire`、`air_filter`、`intercooler`、`turbo`、`engine`、`transmission` の10種である。
 
 ### 7.4 その他の主要テーブル
 
@@ -455,6 +456,18 @@ erDiagram
 6. **比較状態の保持**
 
    Piniaのみではページ遷移や再読み込みで比較候補が失われる可能性がある。URL、Web Storage、またはサーバーセッションのどれを正とするか決定が必要である。
+
+7. **ホーム処理の計画不足**
+
+   `PLAN.md` のホームルートは `CarController::indexHome` を参照するが、同計画内にメソッドの実装仕様がない。検索とランキングプレビューの取得条件を含めて定義する必要がある。
+
+8. **アプリケーション設定の不一致**
+
+   `.env.example` はURLを `http://localhost`、ロケールを英語に設定しているが、Dockerの公開URLは `http://localhost:8080`、画面は日本語を前提とする。またLaravelのタイムゾーンはUTC、PHPはAsia/Tokyoであり、実行環境間で統一が必要である。
+
+9. **未使用CSVの位置づけ**
+
+   `car_data/toyota.csv` は車両データの簡略版だが、現在のシーダーから参照されない。旧データとして削除するか、用途を明文化する必要がある。
 
 ## 13. 要決定事項
 
