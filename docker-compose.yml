@@ -3,17 +3,17 @@ services:
     build: ./docker/php
     container_name: mybuild_app
     ports:
-      - 8080:8080
+      - 8080:80
     depends_on:
       - postgres
     volumes:
-      - ./docker/php/php.ini:/usr/local/etc/php/php.ini
+      - ./docker/php/php.ini:/etc/php.ini
       - ./mybuild:/var/www/html
     networks:
       - mybuild_network
 
   postgres:
-    image: postgres:16
+    build: ./docker/postgres
     container_name: mybuild_db
     ports:
       - 5432:5432

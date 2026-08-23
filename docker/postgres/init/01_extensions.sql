@@ -1,0 +1,3 @@
+-- 拡張機能の追加はここで行う
+-- 例: CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+-- 例: CREATE EXTENSION IF NOT EXISTS "pg_trgm";
