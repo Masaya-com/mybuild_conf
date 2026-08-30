@@ -1,15 +1,15 @@
 [PHP]
 
 ;;;;;;;;;;;;;;;;;;;
-; 基本設定
+; 基本設定（本番環境向け）
 ;;;;;;;;;;;;;;;;;;;
 
-; エラー報告レベル（開発環境：すべて表示）
-error_reporting = E_ALL
+; エラー報告レベル（Deprecated/Noticeは記録するが表示はしない）
+error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT
 
-; 画面へのエラー表示（開発環境向け。本番環境では Off にすること）
-display_errors = On
-display_startup_errors = On
+; 画面へのエラー表示は無効化（ユーザーに内部情報を漏らさない）
+display_errors = Off
+display_startup_errors = Off
 
 ; エラーログをコンテナの標準エラー出力へ記録する
 log_errors = On
@@ -19,17 +19,17 @@ error_log = /dev/stderr
 expose_php = Off
 
 ; スクリプトの最大実行時間（秒）
-max_execution_time = 300
+max_execution_time = 60
 
 ; スクリプトの最大メモリ使用量
-memory_limit = 512M
+memory_limit = 256M
 
 ; POSTデータの最大サイズ（アップロード含む）
-post_max_size = 64M
+post_max_size = 32M
 
 ; ファイルアップロードの許可・最大サイズ・最大数
 file_uploads = On
-upload_max_filesize = 64M
+upload_max_filesize = 32M
 max_file_uploads = 20
 
 ; 一度に受け付ける入力変数の最大数（フォーム項目が多い場合の対策）
@@ -54,18 +54,23 @@ mbstring.internal_encoding = UTF-8
 session.cookie_httponly = On
 session.use_strict_mode = On
 session.cookie_samesite = Lax
+; HTTPS配信を前提に、セッションクッキーはSecure属性のみで送信する
+session.cookie_secure = On
 
 ;;;;;;;;;;;;;;;;;;;
-; OPcache設定（開発環境：変更を即時反映）
+; OPcache設定（本番環境：最大限キャッシュし再検証しない）
 ;;;;;;;;;;;;;;;;;;;
 
 [opcache]
 opcache.enable = 1
-opcache.memory_consumption = 128
-opcache.interned_strings_buffer = 16
-opcache.max_accelerated_files = 10000
-opcache.validate_timestamps = 1
-opcache.revalidate_freq = 0
+opcache.memory_consumption = 256
+opcache.interned_strings_buffer = 32
+opcache.max_accelerated_files = 20000
+; デプロイ時に確実に反映するため、ソース変更の自動検知は無効化する
+; （リリース時は必ず opcache_reset または再起動を行うこと）
+opcache.validate_timestamps = 0
+opcache.save_comments = 1
+opcache.enable_cli = 0
 
 ;;;;;;;;;;;;;;;;;;;
 ; Zendリソース制限
