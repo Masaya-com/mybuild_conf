@@ -2,6 +2,7 @@ services:
   app:
     build: ./docker/php
     container_name: mybuild_app
+    privileged: true
     ports:
       - 8080:80
     depends_on:

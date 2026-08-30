@@ -20,10 +20,13 @@ RUN dnf install -y --allowerasing \
     php-mbstring \
     php-xml \
     php-opcache \
+    systemd \
     unzip \
     vim \
     curl \
     git \
+    findutils \
+    procps-ng \
     && dnf clean all \
     && rm -rf /var/cache/dnf
 
@@ -52,5 +55,4 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 # コンテナログイン時のパス指定
 WORKDIR /var/www/html
 
-# Apache をフォアグラウンドで起動
-CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+CMD ["/usr/sbin/init"]
