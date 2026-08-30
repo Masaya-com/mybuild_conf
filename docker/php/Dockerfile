@@ -33,6 +33,11 @@ RUN dnf install -y --allowerasing \
 # デフォルトのウェルカムページを無効化
 RUN rm -f /etc/httpd/conf.d/welcome.conf
 
+# 一時ディレクトリの作成・パーミッション設定
+RUN mkdir -p /tmp/sessions \
+    && chmod 1777 /tmp \
+    && chmod 777 /tmp/sessions
+
 # カスタム Apache 設定をコピー
 COPY 000-default.conf /etc/httpd/conf.d/mybuild.conf
 
